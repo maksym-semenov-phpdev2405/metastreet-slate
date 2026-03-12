@@ -47,6 +47,11 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/licences?postcode=A12BC&l
         "id": 7,
         "name": "Finn Wood"
       },
+      "assignedTeam": {
+        "id": 1,
+        "name": "Enforcement Team",
+        "category": "Enforcement"
+      },
       "dateSubmitted": "2021-11-26T09:32:08+00:00",
       "datePaid": "2021-11-26T09:32:08+00:00",
       "propertyRooms": {

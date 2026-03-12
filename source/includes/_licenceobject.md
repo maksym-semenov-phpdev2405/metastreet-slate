@@ -33,6 +33,11 @@
     "id": 7,
     "name": "Council Admin"
   },
+  "assignedTeam": {
+    "id": 1,
+    "name": "Enforcement Team",
+    "category": "Enforcement"
+  },
   "dateSubmitted": "2021-11-26T09:32:08+00:00",
   "datePaid": "2021-11-26T09:32:08+00:00",
   "propertyRooms": {
@@ -430,6 +435,33 @@ Set of key-value pairs comprising an identifier and an assignee name.
 </p>
 
 <span style="padding-left:28px; display:inline-block">Name of the person currently assigned to this licence/application.</span>
+
+<p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+
+<p style="max-width:500px; margin-bottom:0; margin-top:15px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">assignedTeam</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
+</p>
+
+Set of key-value pairs comprising an identifier, a team name and category.
+
+<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">assignedTeam.</span>id</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
+</p>
+
+<span style="padding-left:28px">Team unique identifier ID.</span>
+
+<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">assignedTeam.</span>NAME</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<span style="padding-left:28px; display:inline-block">Display name of team.</span>
+
+<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">assignedTeam.</span>CATEGORY</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<span style="padding-left:28px; display:inline-block">Display name of categry.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
