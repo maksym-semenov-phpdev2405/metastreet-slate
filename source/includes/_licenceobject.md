@@ -29,7 +29,7 @@
     "id": 12,
     "name": "Checks in progress"
   },
-  "assignee": {
+  "assignedOfficer": {
     "id": 7,
     "name": "Council Admin"
   },

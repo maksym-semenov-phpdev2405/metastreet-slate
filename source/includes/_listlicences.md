@@ -43,7 +43,7 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/licences?postcode=A12BC&l
         "id": 12,
         "name": "Checks in progress"
       },
-      "assignee": {
+      "assignedOfficer": {
         "id": 7,
         "name": "Finn Wood"
       },
