@@ -50,7 +50,7 @@ configure :build do
   activate :asset_hash, :exts => app.config[:asset_extensions] - %w[.woff .woff2]
   # If you're having trouble with Middleman hanging, commenting
   # out the following two lines has been known to help
-  activate :minify_css
+  #activate :minify_css
   activate :minify_javascript, compressor: Uglifier.new(harmony: true)
   # activate :gzip
 end
