@@ -1,4 +1,4 @@
-FROM ruby:2.6-slim
+FROM ruby:3.2-slim
 
 WORKDIR /srv/slate
 
@@ -15,6 +15,7 @@ RUN apt-get update \
         build-essential \
         git \
         nodejs \
+        zlib1g-dev \
     && gem install bundler \
     && bundle install \
     && apt-get remove -y build-essential git \
