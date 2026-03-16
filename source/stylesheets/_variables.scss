@@ -14,15 +14,13 @@ License for the specific language governing permissions and limitations
 under the License.
 */
 
+/* CUSTOMIZE SLATE */
 
-////////////////////////////////////////////////////////////////////////////////
-// CUSTOMIZE SLATE
-////////////////////////////////////////////////////////////////////////////////
-// Use these settings to help adjust the appearance of Slate
+/* Use these settings to help adjust the appearance of Slate */
 
 
-// BACKGROUND COLORS
-////////////////////
+/* BACKGROUND COLORS */
+
 $nav-bg: #FFFFFF !default;
 $examples-bg: #FFFFFF !default;
 $code-bg: #51596C !default;
@@ -52,8 +50,7 @@ $lang-select-active-text: #fff !default; // color of selected language tab text
 $lang-select-pressed-text: #fff !default; // color of language tab text when mouse is pressed
 
 
-// SIZES
-////////////////////
+/* SIZES */
 $nav-width: 230px !default; // width of the navbar
 $examples-width: 50% !default; // portion of the screen taken up by code examples
 $logo-margin: 0px !default; // margin below logo
@@ -68,8 +65,7 @@ $tablet-width: 930px !default; // min width before reverting to tablet size
 $phone-width: $tablet-width - $nav-width !default; // min width before reverting to mobile size
 
 
-// FONTS
-////////////////////
+/* FONTS*/
 %default-font {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica Neue, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
@@ -87,16 +83,15 @@ $phone-width: $tablet-width - $nav-width !default; // min width before reverting
 }
 
 
-// OTHER
-////////////////////
+/* OTHER */
 $nav-footer-border-color: #666 !default;
 $search-box-border-color: #e3e3e3 !default;
 
 
-////////////////////////////////////////////////////////////////////////////////
-// INTERNAL
-////////////////////////////////////////////////////////////////////////////////
-// These settings are probably best left alone.
+
+/* INTERNAL */
+
+/* These settings are probably best left alone. */
 
 %break-words {
     word-break: break-all;

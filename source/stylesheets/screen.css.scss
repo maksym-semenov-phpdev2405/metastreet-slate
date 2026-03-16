@@ -21,9 +21,7 @@ License for the specific language governing permissions and limitations
 under the License.
 */
 
-////////////////////////////////////////////////////////////////////////////////
-// GENERAL STUFF
-////////////////////////////////////////////////////////////////////////////////
+/* GENERAL STUFF */
 
 html, body {
   color: $main-text;
@@ -37,11 +35,9 @@ html, body {
   -webkit-text-size-adjust: none; /* Never autoresize text */
 }
 
-////////////////////////////////////////////////////////////////////////////////
-// TABLE OF CONTENTS
-////////////////////////////////////////////////////////////////////////////////
+/* TABLE OF CONTENTS */
 
-// Section headers
+/* Section headers */
   .toc-h1.toc-link[data-title="CORE RESOURCES"]{
     text-transform: uppercase;
     margin-top: 1em;
@@ -91,7 +87,7 @@ html, body {
   font-weight: 500;
   border-right: 1px solid #eee;
 
-  // language selector for mobile devices
+  /* language selector for mobile devices */
   .lang-selector {
     display: none;
     a {
@@ -100,7 +96,7 @@ html, body {
     }
   }
 
-  // This is the logo at the top of the ToC
+  /* This is the logo at the top of the ToC */
   .logo {
     display: block;
     max-width: 100%;
@@ -166,9 +162,9 @@ html, body {
   }
 
 
-  // The Table of Contents is composed of multiple nested
-  // unordered lists.  These styles remove the default
-  // styling of an unordered list because it is ugly.
+  /* The Table of Contents is composed of multiple nested */
+  /* unordered lists.  These styles remove the default */
+  /* styling of an unordered list because it is ugly. */
   ul, li {
     list-style: none;
     margin: 0;
@@ -183,13 +179,13 @@ html, body {
     transition-duration: 200ms;
   }
 
-  // This is the currently selected ToC entry
+  /* This is the currently selected ToC entry */
   .toc-link.active {
     background-color: $nav-active-bg;
     color: $nav-active-text;
   }
 
-  // this is parent links of the currently selected ToC entry
+  /* this is parent links of the currently selected ToC entry */
   .toc-link.active-parent {
     background-color: $nav-active-parent-bg;
     color: $nav-active-parent-text;
@@ -243,7 +239,7 @@ html, body {
   &:hover { color: #545762; }
 }
 
-// button to show navigation on mobile devices
+/* button to show navigation on mobile devices */
 #nav-button {
   span {
     display: block;
@@ -276,10 +272,7 @@ html, body {
   &.open {left: $nav-width}
 }
 
-
-////////////////////////////////////////////////////////////////////////////////
-// PAGE LAYOUT AND CODE SAMPLE BACKGROUND
-////////////////////////////////////////////////////////////////////////////////
+/* PAGE LAYOUT AND CODE SAMPLE BACKGROUND */
 
 .page-wrapper {
   margin-left: $nav-width;
@@ -288,13 +281,13 @@ html, body {
   background-color: $main-bg;
   min-height: 100%;
 
-  padding-bottom: 1px; // prevent margin overflow
+  padding-bottom: 1px; /* prevent margin overflow */
 
-  // The dark box is what gives the code samples their dark background.
-  // It sits essentially under the actual content block, which has a
-  // transparent background.
-  // I know, it's hackish, but it's the simplist way to make the left
-  // half of the content always this background color.
+  /* The dark box is what gives the code samples their dark background. */
+  /* It sits essentially under the actual content block, which has a */
+  /* transparent background. */
+  /* I know, it's hackish, but it's the simplist way to make the left */
+  /* half of the content always this background color. */
   .dark-box {
     width: $examples-width;
     background-color: $examples-bg;
@@ -343,15 +336,14 @@ html, body {
   }
 }
 
-////////////////////////////////////////////////////////////////////////////////
-// CONTENT STYLES
-////////////////////////////////////////////////////////////////////////////////
-// This is all the stuff with the light background in the left half of the page
+
+/* CONTENT STYLES */
+/* This is all the stuff with the light background in the left half of the page */
 
 .content {
-  // fixes webkit rendering bug for some: see #538
+  /* fixes webkit rendering bug for some: see #538 */
   -webkit-transform: translateZ(0);
-  // to place content above the dark box
+  /* to place content above the dark box */
   position: relative;
   z-index: 30;
 
@@ -374,7 +366,7 @@ html, body {
     padding-left: $main-padding + 15px;
   }
 
-  // the div is the tocify hidden div for placeholding stuff
+  /* the div is the tocify hidden div for placeholding stuff */
   &>h1, &>h2, &>div {
     clear:both;
   }
@@ -408,8 +400,8 @@ html, body {
     color: #2a2f45;
   }
 
-  // h2s right after h1s should bump right up
-  // against the h1s.
+  /* h2s right after h1s should bump right up */
+  /* against the h1s. */
   h1 + h2, h1 + div + h2 {
     margin-top: $h1-margin-bottom * -1;
     border-top: none;
@@ -557,10 +549,8 @@ html, body {
   }
 }
 
-////////////////////////////////////////////////////////////////////////////////
-// CODE SAMPLE STYLES
-////////////////////////////////////////////////////////////////////////////////
-// This is all the stuff that appears in the right half of the page
+/* CODE SAMPLE STYLES */
+/* This is all the stuff that appears in the right half of the page */
 
 .content {
   &>div.highlight {
@@ -610,11 +600,9 @@ html, body {
   }
 }
 
-////////////////////////////////////////////////////////////////////////////////
-// RESPONSIVE DESIGN
-////////////////////////////////////////////////////////////////////////////////
-// These are the styles for phones and tablets
-// There are also a couple styles disperesed
+/* RESPONSIVE DESIGN */
+/* These are the styles for phones and tablets */
+/* There are also a couple styles disperesed */
 
 @media (max-width: $tablet-width) {
   .toc-wrapper {
