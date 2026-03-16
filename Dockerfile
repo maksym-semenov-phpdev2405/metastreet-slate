@@ -16,6 +16,8 @@ RUN apt-get update \
         git \
         nodejs \
         zlib1g-dev \
+        libsass-dev \
+        sassc \
     && gem install bundler \
     && bundle install \
     && apt-get remove -y build-essential git \
