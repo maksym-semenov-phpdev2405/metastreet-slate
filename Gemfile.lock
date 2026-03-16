@@ -180,8 +180,9 @@ DEPENDENCIES
   middleman-autoprefixer (~> 3.0)
   middleman-sprockets (~> 4.1)
   middleman-syntax (~> 3.2)
-  nokogiri (~> 1.15)
-  redcarpet (~> 3.5.0)
+  nokogiri (~> 1.16)
+  rack (~> 3.0)
+  redcarpet (~> 3.5)
   rouge (~> 3.21)
   sass
   webrick
